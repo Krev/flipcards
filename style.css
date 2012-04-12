@@ -1,0 +1,29 @@
+body{
+        background-color:#c0c0c0; 
+        font-family:'Della Respira', sans-serif;
+    }
+
+.flipcard{
+
+        width: 80%;
+        height: 50%;
+        position:absolute;
+        left: -9999px;
+        border-radius:5px;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -webkit-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out;
+    }
+    
+:target{
+        background-color:#948e8e;
+        left:20px;
+    }
+    
+a{
+    text-decoration:none;
+    color:#bbbbbb;
+    background-color:#eeeeee;
+    border-radius:5px;
+    }
