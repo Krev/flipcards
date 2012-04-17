@@ -1,0 +1,88 @@
+body{
+        background-color:#c0c0c0; 
+        font-family: 'Oxygen', sans-serif;
+    }
+
+.flipcard{
+        margin-top:100px;
+        background-color:#5e5e5e;
+        width: 80%;
+        height: 50%;
+        position:absolute;
+        -moz-transform:rotatey(90deg);
+        -ms-transform:rotatey(90deg);
+        -o-transform:rotatey(90deg);
+        -webkit-transform:rotatey(90deg);
+        transform:rotatey(90deg);
+        border-radius:5px;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+    
+:target{
+        -moz-transform:rotatey(0deg);
+        -ms-transform:rotatey(0deg);
+        -o-transform:rotatey(0deg);
+        -webkit-transform:rotatey(0deg);
+        transform:rotatey(0deg);
+    }
+    
+.cardlink{
+    background-color:#545657;
+    padding:10px;
+    position:relative;
+    top:5px;
+	font-size:20px;
+	text-decoration:none;
+	color:#bbb;
+	border: solid 1px transparent;
+    margin-left:15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+    }
+
+.flipcard::before{
+    content:"";
+    display:block;
+    position:absolute;
+    right:-10px;
+    width: 30px;
+    height:30px;
+    background-color:#5e5e5e;
+    z-index:-1;
+}
+
+.flipcard::after{
+    content:"";
+    display:block;
+    position:absolute;
+    right:-60px;
+    top:-10px;
+    border-left:    50px #5e5e5e solid;
+    border-top:     25px transparent solid;
+    border-bottom:  25px transparent solid;
+    background:transparent;
+}
+.flipcard li{
+        float:left;
+        margin-left:10px;
+    }
+    
+.flipcard a{
+        padding:5px;
+        text-decoration:none;
+        color:#bbb;
+        font-size:20px;
+    }
+
+.flipcard a:hover{
+        background-color:#505050;
+    }
+    
+.flipcard a:active{
+        background-color:#404040;
+    }
