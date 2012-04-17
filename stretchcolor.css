@@ -6,27 +6,20 @@ body{
 .flipcard{
         margin-top:100px;
         background-color:#5e5e5e;
-        width: 80%;
+        width: 0%;
         height: 50%;
         position:absolute;
-        -moz-transform:rotatey(90deg);
-        -ms-transform:rotatey(90deg);
-        -o-transform:rotatey(90deg);
-        -webkit-transform:rotatey(90deg);
-        transform:rotatey(90deg);
         border-radius:5px;
         -moz-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out;
         -webkit-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
+        left:-200px;
     }
     
 :target{
-        -moz-transform:rotatey(0deg);
-        -ms-transform:rotatey(0deg);
-        -o-transform:rotatey(0deg);
-        -webkit-transform:rotatey(0deg);
-        transform:rotatey(0deg);
+        width:80%;
+        left:0px;
     }
     
 .cardlink{
@@ -34,8 +27,8 @@ body{
     padding:10px;
     position:relative;
     top:5px;
-	font-size:20px;
-	text-decoration:none;
+    font-size:20px;
+    text-decoration:none;
 	color:#bbb;
 	border: solid 1px transparent;
     margin-left:15px;
@@ -63,4 +56,18 @@ body{
     
 .flipcard a:active{
         background-color:#404040;
+    }
+    
+.Design{
+        background-color:blue;
+    }
+
+.Leisure{
+        background-color:yellow;
+    }
+.Programming{
+        background-color:green;
+    }
+.Social{
+        background-color:red;
     }
