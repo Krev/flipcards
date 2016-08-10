@@ -1,3 +1,3 @@
-This is an experiment using CSS :target to make a website with flipping pages.
-I will try to make a home page for a browser that looks nice and cool and stuff.
-Yes, stuff.
+This is an experiment using CSS :target to make a website with pages that move in and out using different effects based on the assigned stylesheet.
+
+:target in CSS allows you to modify an element if it has been linked to through its ID and acts the same way hovering an element with :hover would.
